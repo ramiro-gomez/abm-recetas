@@ -1,6 +1,33 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
+// Custom variables
+$black: hsl(0, 0%, 20%);
+$light-gray: hsl(0, 0%, 82%);
+
+// Override bootstrap
+$container-padding-x: 15px;
+$nav-link-padding-y: 0;
+$navbar-padding-y: 0;
+$navbar-light-color: $black;
+$navbar-light-hover-color: $black;
+$dropdown-border-width: 0;
 
 @import "~bootstrap/scss/bootstrap";
+
+body {
+	font-family: "Lato", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: $black;
+	&:hover {
+		color: $black;
+	}
+}
+button {
+	border: 0;
+	background-color: transparent;
+	text-align: left;
+}
+.dropdown-menu {
+	padding: 0;
+	margin: 0 !important;
+}
