@@ -1,6 +1,10 @@
 // Custom variables
 $black: hsl(0, 0%, 20%);
+$yellow: hsl(39, 95%, 57%);
 $light-gray: hsl(0, 0%, 82%);
+
+$fm-primary: "Lato", sans-serif;
+$fm-secondary: "Changa One", cursive;
 
 // Override bootstrap
 $container-padding-x: 15px;
@@ -9,11 +13,14 @@ $navbar-padding-y: 0;
 $navbar-light-color: $black;
 $navbar-light-hover-color: $black;
 $dropdown-border-width: 0;
+$carousel-transition-duration: 0.3s;
+$carousel-control-width: 1rem;
+// $carousel-caption-padding-y: 0;
 
 @import "~bootstrap/scss/bootstrap";
 
 body {
-	font-family: "Lato", sans-serif;
+	font-family: $fm-primary;
 }
 a {
 	text-decoration: none;
@@ -30,4 +37,7 @@ button {
 .dropdown-menu {
 	padding: 0;
 	margin: 0 !important;
+}
+.carousel-caption {
+	inset: 0;
 }
