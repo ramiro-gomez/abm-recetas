@@ -1,7 +1,9 @@
-/* eslint-disable max-len */
 import React from 'react';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import {
+	Carousel, Col, Container, Row,
+} from 'react-bootstrap';
 import Header from '../components/Header';
+import HomeCard from '../components/HomeCard';
 import './Home.scss';
 
 const Home = () => (
@@ -64,6 +66,34 @@ const Home = () => (
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
+		<Container as="section" className="py-4 py-md-5" fluid>
+			<Row className="g-4">
+				<Col xs={12} md={4}>
+					<HomeCard
+						srcImg="https://template63701.motopreview.com/mt-demo/63700/63701/mt-content/uploads/2017/05/mt-0975-home-img1.jpg"
+						altImg="first card"
+						cardTitle="For vegans"
+						cardText="Burger + French Fries + Drink"
+					/>
+				</Col>
+				<Col xs={12} md={4}>
+					<HomeCard
+						srcImg="https://template63701.motopreview.com/mt-demo/63700/63701/mt-content/uploads/2017/05/mt-0975-home-img2.jpg"
+						altImg="second card"
+						cardTitle="Order Online"
+						cardText="Available Every Day 9:00–23:00"
+					/>
+				</Col>
+				<Col xs={12} md={4}>
+					<HomeCard
+						srcImg="https://template63701.motopreview.com/mt-demo/63700/63701/mt-content/uploads/2017/05/mt-0975-home-img3.jpg"
+						altImg="third card"
+						cardTitle="Cakes Specials"
+						cardText="Every Friday Only $0.99"
+					/>
+				</Col>
+			</Row>
+		</Container>
 	</>
 );
 

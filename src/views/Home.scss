@@ -140,3 +140,57 @@
 		}
 	}
 }
+
+@include idx.media-breakpoint-up(xl) {
+	.home-carousel {
+		&__img {
+			height: 698px;
+		}
+		&__button {
+			padding: 16px 66px;
+		}
+		&__slide {
+			&--1 .home-carousel {
+				&__title-text {
+					&--1 {
+						font-size: 95px;
+						line-height: 1;
+					}
+					&--2 {
+						font-size: 53px;
+						line-height: 1.2;
+					}
+				}
+			}
+			&--2 .home-carousel {
+				&__title-text {
+					&--1 {
+						font-size: 24px;
+					}
+					&--2 {
+						font-size: 70px;
+					}
+					&--3 {
+						font-size: 95px;
+					}
+					&--4 {
+						font-size: 36px;
+					}
+				}
+			}
+			&--3 .home-carousel {
+				&__title-text {
+					&--1 {
+						font-size: 34px;
+					}
+					&--2 {
+						font-size: 90px;
+					}
+					&--3 {
+						font-size: 53px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@use "../index.scss" as idx;
+
+.home-card {
+	&__img {
+		height: 213px;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	&__title,
+	&__text {
+		text-align: center;
+		letter-spacing: 0px;
+	}
+	&__title {
+		margin-bottom: 0;
+		font-family: idx.$fm-secondary;
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+
+@include idx.media-breakpoint-up(md) {
+	.home-card {
+		&__img {
+			height: 316px;
+		}
+		&__title {
+			font-size: 28px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 1.7;
+		}
+	}
+}
+
+@include idx.media-breakpoint-up(xl) {
+	.home-card {
+		&__img {
+			height: 393px;
+		}
+		&__title {
+			font-size: 53px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+}

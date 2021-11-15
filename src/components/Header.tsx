@@ -5,7 +5,7 @@ import { Dropdown, Nav, Navbar } from 'react-bootstrap';
 import './Header.scss';
 
 const Header: React.FC = () => (
-	<header className="py-3 sticky-top">
+	<header className="py-3 sticky-top bg-white">
 		<Navbar className="container" expand="md">
 			<Navbar.Brand href="/#">
 				<img src="https://template63701.motopreview.com/mt-demo/63700/63701/mt-content/uploads/2017/05/mt-0975-logo.png" alt="logo" />
