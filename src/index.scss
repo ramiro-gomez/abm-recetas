@@ -1,7 +1,11 @@
 // Custom variables
-$black: hsl(0, 0%, 20%);
 $yellow: hsl(39, 95%, 57%);
-$light-gray: hsl(0, 0%, 82%);
+$red-550: hsl(0, 80%, 63%);
+$gray-250: hsl(0, 0%, 82%);
+$gray-350: hsl(0, 0%, 61%);
+$gray-650: hsl(228, 4%, 23%);
+$dark: hsl(240, 4%, 13%);
+$black: hsl(0, 0%, 20%);
 
 $fm-primary: "Lato", sans-serif;
 $fm-secondary: "Changa One", cursive;
@@ -14,8 +18,7 @@ $navbar-light-color: $black;
 $navbar-light-hover-color: $black;
 $dropdown-border-width: 0;
 $carousel-transition-duration: 0.3s;
-$carousel-control-width: 1rem;
-// $carousel-caption-padding-y: 0;
+$carousel-control-width: 3rem;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -37,6 +40,10 @@ button {
 .dropdown-menu {
 	padding: 0;
 	margin: 0 !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	width: 1.5rem;
 }
 .carousel-caption {
 	inset: 0;

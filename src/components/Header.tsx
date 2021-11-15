@@ -9,6 +9,7 @@ const Header: React.FC = () => (
 		<Navbar className="container" expand="md">
 			<Navbar.Brand href="/#">
 				<img src="https://template63701.motopreview.com/mt-demo/63700/63701/mt-content/uploads/2017/05/mt-0975-logo.png" alt="logo" />
+				<h1 className="visually-hidden">Quick Food</h1>
 			</Navbar.Brand>
 			<Navbar.Toggle className="text-black border-0 shadow-none" aria-controls="basic-navbar-nav">
 				<FontAwesomeIcon icon={faBars} size="lg" />

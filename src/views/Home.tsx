@@ -2,6 +2,7 @@ import React from 'react';
 import {
 	Carousel, Col, Container, Row,
 } from 'react-bootstrap';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HomeCard from '../components/HomeCard';
 import './Home.scss';
@@ -94,6 +95,7 @@ const Home = () => (
 				</Col>
 			</Row>
 		</Container>
+		<Footer />
 	</>
 );
 
